@@ -1,0 +1,116 @@
+
+/* NAVBAR */
+.portfolio-h2 {
+    display: none;
+}
+
+.submenu-portfolio {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+/* ALBUMS */
+
+.album-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.album {
+    width: 33%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.album a {
+    text-decoration: none;
+}
+
+.album img {
+    width: 100%;
+}
+
+.album-title-div {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white ;
+    opacity: 0.6;
+    height:7%;
+    display: flex;
+    align-items: center;
+}
+.album h3 {
+   
+    z-index: 1;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 20px;
+   
+}
+
+.album a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 1024px) {
+    
+    /* NAVBAR */
+
+    .portfolio-h2 {
+        display: block;
+        text-align:center;
+        padding: 20px;
+        margin: 0;
+        color: black
+    }
+
+    .submenu-portfolio {
+        opacity: 1;
+    }
+
+    /* ALBUMS */
+    .album-container {
+        flex-direction: column;
+    }
+
+    .album {
+        width: 100%;
+    }
+
+    .album-title-div {
+        top: 50%;
+        left:50%;
+        font-size: 15px;
+        height: 17%;
+        
+    }
+    .after-wedding-div {
+        left: 50%;
+    }
+
+    
+
+    
+   
+
+    
+}

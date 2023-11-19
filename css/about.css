@@ -1,0 +1,217 @@
+    * {
+    box-sizing: border-box;
+   
+    }
+    
+    /* NAVBAR */
+
+    .nav-container {
+    background-image: url("/assets/0449_Laci_es_Emoke_Eskuvo.jpg"); /* The image used */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+   
+    }
+    .hamburger{
+        display: none;
+        
+    }
+    .about-h2 {
+        display: none;
+    }
+    
+    .momentum {
+        display: none;
+    }
+    .navbar {
+        margin: 0;
+        height: 100px;
+        font-family: 'Mulish', sans-serif;
+        letter-spacing: 1.5px;
+        color: 	white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .submenu-portfolio {
+        display: none;
+        position: absolute;
+        opacity:0.5;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .submenu-portfolio li {
+        list-style-type: none;
+        padding: 5px 0;
+        
+    }
+    .submenu-portfolio li a {
+        color: black;
+        text-decoration: none;
+        
+    }
+    
+    .submenu-portfolio li a:hover{
+        text-decoration: underline;
+    }
+    
+    .dropdown-portfolio:hover .submenu-portfolio {
+        display: block;
+    }
+    
+    .navbar li {
+        list-style-type: none;
+    }
+    
+    .nav-item {
+        margin: 1rem;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .nav-item:hover {
+        text-decoration: underline;
+    }
+    
+    .logo {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .logo:hover{
+        text-decoration: underline;
+    }
+    /* ABOUT SECTION */
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    
+    .profile-picture {
+        position: relative;
+        height: 400px;
+        padding: 10px;
+        animation: slideInImage 2s ease-in-out;
+        
+    }
+
+    @keyframes slideInImage {
+        0% {left: -600px;} /* Start from the left, outside of the viewport */
+        100% {left: 0;} /* Move to the original position (0) */
+    }
+    
+    .about-text {
+        position: relative;
+        width: 400px;
+        font-family: 'Mulish', sans-serif;
+        animation: slideInText 2s ease-in-out;
+
+    }
+
+    @keyframes slideInText {
+        0% {right: -600px;}
+        100% {right:0;}
+    }
+    
+    /* FOOTER */
+    .footer {
+        background-color: black;
+        margin-top: 10px;
+        height: 200px;
+    }
+
+    /* MEDIA QUERY */
+    
+    @media only screen and (max-width: 768px) {
+       
+    
+        .nav-container {
+            background-image: url("/assets/0149_Gellert_es_Ildiko_Utofotozas.jpg");
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; 
+            position: relative;
+            padding-top: 20px;
+        }
+        .hamburger{
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            display: block;
+            height: 50px;
+            top: 45px;
+            left: 10px;
+            transform:translateX(0);
+            transition: transform 0.3s ease;
+           
+        }
+    
+        .about-h2 {
+            display: block;
+            text-align:center;
+            padding: 20px;
+            margin: 0;
+            color: white;
+        }
+        .navbar{
+            background-color: black;
+            opacity: 0.5;
+            flex-direction: column;
+            padding: 30px;
+            height: 300px;
+            width: 100%;
+            text-align: center;
+            transform:translateX(-100%);
+            transition:transform 0.3s ease;
+        }
+    
+        .navbar.active {
+            transform:translateX(0);
+        }
+    
+        .submenu-portfolio {
+            opacity: 1;
+           background-color: black;
+           text-align: left;
+        }
+
+        .submenu-portfolio li a {
+            color: white;
+        }
+    
+        .navbar li {
+            padding: 10px;
+        }
+        .nav-item {
+            color: white;
+            
+        }
+    
+        .logo-li {
+            display: none;
+        }
+
+        .about {
+            flex-direction: column;
+        }
+
+        .profile-picture{
+            height: 250px;
+        }
+        
+        .about-text {
+            font-size: 1em;
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+
+        }
+    
+        
+    }   

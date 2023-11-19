@@ -1,0 +1,290 @@
+
+/* GENERAL */
+* {
+
+    box-sizing: border-box;
+    
+    }
+/* SLIDER */
+    .main-image {
+        height: 80vh;
+        width: 100%;
+        background-image: url("/assets/0449_Laci_es_Emoke_Eskuvo.jpg"); /* The image used */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    /* NAVBAR */
+
+    .hamburger{
+        display: none;
+        
+    }
+
+    .contact-h2 {
+        display: none;
+    }
+    .navbar {
+        height: 100px;
+        font-family: 'Mulish', sans-serif;
+        letter-spacing: 1.5px;
+        color: 	 	 white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .submenu-portfolio {
+        display: none;
+        position: absolute;
+        opacity:0.5;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .submenu-portfolio li {
+        list-style-type: none;
+        padding: 5px 0;
+    }
+    .submenu-portfolio li a {
+        color: black;
+        text-decoration: none;
+        
+    }
+    
+    .submenu-portfolio li a:hover{
+        text-decoration: underline;
+    }
+    
+    .dropdown-portfolio:hover .submenu-portfolio {
+        display: block;
+    }
+    
+    .navbar li {
+        list-style-type: none;
+    }
+
+    .nav-item {
+        margin: 1rem;
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-item:hover{
+        text-decoration: underline;
+    }
+    
+    .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+    /* CONTACT */
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact h1 {
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 1.5px;
+    }
+
+    .contact p {
+        font-family: 'Mulish', sans-serif;
+        letter-spacing: 1.5px;
+        font-weight: 200;
+        font-size: 20px;
+    }
+    
+    .fill-in {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        font-family:'Mulish', sans-serif;
+        font-weight: 200;
+    }
+
+    .contact-text{
+        text-align: center;
+    }
+
+    .contact-input{
+        margin: 1rem;
+        padding: 10px;
+        border-bottom: solid 1px grey;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+
+    .event-date {
+        text-align: center;
+        font-family:'Mulish', sans-serif;
+        font-size: 15px;
+    }
+
+    #message {
+        text-align: center;
+        font-family:'Mulish', sans-serif;
+        font-weight: 200;
+        padding: 30px;
+        margin: 1rem;
+    }
+    
+
+    .submit{
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .submit:hover {
+        cursor: pointer;
+    }
+
+    /* QUESTIONS */
+    .question {
+        padding-top:40px;
+    }
+
+    .contact-me{
+        display: flex;
+        
+    }
+
+    .contact-me p {
+        margin: 20px;
+    }
+
+    .symbol {
+        vertical-align: text-top;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        background-color: #79a2b6;
+        height: 200px;
+    }
+
+
+
+
+
+    @media only screen and (max-width: 768px) {
+    
+        .main-image {
+        background-image: url("/assets/0274_Roland_es_Petra_Utofotozas.jpg"); 
+        height: 500px;
+        }
+    
+        .nav-container {
+            position: relative;
+            padding-top: 20px;
+        }
+        .hamburger{
+            color: white;
+            display:inline;
+           height: 50px;
+           position: absolute;
+           top: 45px;
+           left: 10px;
+           transform:translateX(0);
+           transition: transform 0.3s ease;
+         }
+
+        .contact-h2 {
+            color: white;
+            display: block;
+            text-align:center;
+            letter-spacing:1.5px;
+            padding: 20px;
+            margin: 0;
+           
+        }
+        .navbar{
+            background-color: black;
+            opacity: 0.5;
+            flex-direction: column;
+            padding: 30px;
+            height: 300px;
+            text-align: center;
+            transform:translateX(-100%);
+             transition:transform 0.3s ease;
+            
+        }
+
+        .submenu-portfolio {
+            display: none;
+            position: absolute;
+            background-color: black;
+            padding: 10px;
+            width: 200px;
+        }
+        
+        .submenu-portfolio li {
+            list-style-type: none;
+            padding: 5px 0;
+        }
+        .submenu-portfolio li a {
+            color: white;
+            text-decoration: none;
+            
+        }
+        
+        .submenu-portfolio li a:hover{
+            text-decoration: underline;
+        }
+        
+        .dropdown:hover .submenu-portfolio {
+            display: block;
+        }
+
+        .navbar.active {
+            transform:translateX(0);
+        }
+
+        .submenu-portfolio {
+            opacity: 1;
+            text-align: left;
+         }
+
+        .navbar li {
+            padding: 10px;
+        }
+
+        
+        .nav-item {
+            color: white;
+        }
+    
+        .logo-li {
+            display: none;
+        }
+        
+        .fill-in {
+            width: 100%;
+        }
+        .contact-me {
+            flex-direction: column;
+        }
+
+        .contact p {
+            text-align: center;
+        }
+        .footer {
+            background-color: black;
+            
+        }
+    }   

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    
+    <!-- PLayfair display font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- Mulish font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- NAV CONTAINER -->
+         <nav class="nav-container">
+            <div class="mobile-menu-button hamburger">
+                <i class="fas fa-bars fa-lg"></i>
+            </div>
+            <div>
+                <h2 class="portfolio-h2">
+                   Portfolio
+                </h2>
+                
+            </div>
+            <ul class="navbar">
+                <li><a href="/pages/home.html" class="nav-item">HOME</a></li>
+                <li class="dropdown-portfolio">
+                    <a href="/pages/portfolio.html" class="nav-item">PORTFOLIO</a>
+                    <ul class="submenu-portfolio">
+                        <li><a href="/pages/couples.html">Couples</a></li>
+                        <li><a href="/pages/wedding.html">The Wedding</a></li>
+                        <li><a href="/pages/after-wedding.html">After wedding</a></li>
+                    </ul>
+                </li>
+
+                <li class="logo-li"><a href="/pages/home.html" class= "logo">Momentum Photography</a></li>
+                <li><a href="/pages/about.html" class="nav-item">ABOUT</a></li>
+                <li><a href="/pages/contact.html" class="nav-item">CONTACT</a></li>
+            </ul>
+        </nav> 
+        <!-- MAIN CONTENT -->
+        <div class="album-container">
+            <div class="album">
+                <a href="/pages/couples.html">
+                    <img id="couples-img" src="/assets/standing1.jpeg" alt="couples">
+                    <div class="album-title-div"><h3>Couples</h3></div>
+                </a>
+            </div>
+            <div class="album">
+                <a href="/pages/wedding.html">
+                    <img id="wedding-img" src="/assets/standing2.jpeg" alt="wedding">
+                    <div class="album-title-div"><h3>Wedding</h3></div>
+                </a>
+            </div>
+            <div class="album">
+                <a href="/pages/after-wedding.html">
+                    <img id="after-wedding-img" src="/assets/standing3.jpg" alt="after wedding">
+                    <div class="album-title-div after-wedding-div"><h3>After wedding</h3></div>
+                </a>
+                
+            </div>
+        </div>
+       
+    <script src="/JavaScript/portfolio.js"></script>  
+</body>
+</html>
